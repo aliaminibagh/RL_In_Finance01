@@ -6,7 +6,7 @@ def formatPrice(n):
     return("-Rs." if n<0 else "Rs.")+"{0:.2f}".format(abs(n))
 def getStockDataVec(key):
     vec = []
-    lines = open(key+".csv","r").read().splitlines()
+    lines = open('Data/' + key+".csv","r").read().splitlines()
     counter = 1
     for line in lines[1:]:
         #print(line)
